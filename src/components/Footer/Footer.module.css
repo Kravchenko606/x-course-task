@@ -1,0 +1,28 @@
+.footer {
+  background-color: #1B3764;
+  color: #FFFFFF;
+  font-family: 'Cardo';
+  font-style: normal;
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 40px;
+  max-height: max-content;
+  cursor: pointer;
+}
+
+.footer_link:link {
+  color: #FFFFFF;
+}
+
+.footer_link:visited {
+  color: blue;
+}
+
+.footer_link:hover,
+.footer_link:active {
+  color: #FFCA42;
+}

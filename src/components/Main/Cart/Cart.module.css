@@ -1,0 +1,118 @@
+.cart {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  min-height: 500px;
+  max-height: max-content;
+  color: #1B3764;
+  background-color: #F5F8FC;
+  font-family: 'Cardo';
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+}
+
+.button_purchase {
+  width: 110px;
+  height: 45px;
+  margin: 10px;
+  background-color: #F5F8FC;
+  color: #1B3764;
+  font-family: 'Cardo';
+  font-weight: 600;
+  font-size: 20px;
+  border: 1px solid #FFCA42;
+  border-radius: 100px 100px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn_close {
+  width: 40px;
+  height: 35px;
+  color: #1B3764;
+  font-family: 'Cardo';
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+}
+
+.button_purchase:hover {
+  transform: scale(1.10);
+  color: #1B3764;
+}
+
+.cart_header {
+  display: grid;
+  grid-template-columns: 3fr repeat(4, 1fr);
+  margin: 15px 10px;
+  color: #1B3764;
+  border: 1px solid #1B3764;
+  background-color: #FFCA42;
+  font-family: 'Cardo';
+  font-weight: 700;
+  font-size: 22px;
+  margin: 20px 0;
+
+}
+
+.item_in_cart {
+  display: grid;
+  grid-template-columns: 1fr 2fr repeat(4, 1fr);
+  width: 100%;
+  height: 160px;
+  align-items: center;
+}
+
+.image_in_cart {
+  width: 100px;
+  height: 150px;
+  margin: 3px;
+}
+
+.counter_wrapper {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  height: 5px;
+}
+
+.counter_value {
+  border: 2px solid #FFCA42;
+  border-radius: 10%;
+  text-align: center;
+  width: 40px;
+  height: 25px;
+  font-family: 'Cardo';
+  font-weight: 300;
+  color: #1B3764;
+}
+
+.head_value_price_total {
+  font-size: 25px;
+  font-weight: 700;
+  color: #FFCA42;
+}
+
+.head_value_total_price {
+  font-size: 25px;
+  font-weight: 700;
+  color: #1B3764;
+  background-color: #FFCA42;
+  border: 1px solid #1B3764;
+  text-align: center;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.empty_cart {
+  width: 100%;
+  height: 100px;
+  text-align: left;
+  font-family: 'Cardo';
+  font-size: 25px;
+  font-weight: 600;
+  color: #1B3764;
+  margin: 10px
+}

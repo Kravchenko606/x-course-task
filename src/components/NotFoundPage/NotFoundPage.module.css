@@ -1,0 +1,11 @@
+.page_not_found {
+  min-height: 320px;
+  max-height: max-content;
+  background-color: #F5F8FC;
+  color: #1B3764;
+  font-family: 'Cardo';
+  font-weight: 700;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 210px;
+}

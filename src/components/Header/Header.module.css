@@ -1,0 +1,54 @@
+.header {
+  background-color: #1B3764;
+  color: #FFFFFF;
+  line-height: 15px;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.header_bottom_box {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  box-sizing: border-box;
+  min-height: 100px;
+  max-height: max-content;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Cardo';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.header_bottom_logo {
+  justify-content: left;
+  margin-left: 15px;
+}
+
+.header_bottom_personal {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin-right: 15px;
+  gap: 15px;
+  justify-content: right;
+}
+
+.btn_sign_out {
+  font-family: 'Cardo';
+  color: #FFCA42;
+  font-size: 20px;
+  line-height: 26px;
+  border: none;
+}
+
+.header_bottom_user {
+  font-family: 'Cardo';
+  color: #FFCA42;
+  font-size: 20px;
+  line-height: 26px;
+}
