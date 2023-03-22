@@ -140,7 +140,7 @@ export default function BookList() {
                       <Button
                         variant="outline-warning"
                         className={styles.button_view}
-                        onClick={() => navigate(`/specificBook/${books.id}`)}
+                        onClick={() => navigate(`/books/${books.id}`)}
                       >
                         View
                       </Button>

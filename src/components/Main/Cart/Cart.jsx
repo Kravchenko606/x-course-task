@@ -69,7 +69,7 @@ export default function Cart() {
               <Row>
                 <Col>
                   <div className={styles.item_in_cart} key={id}>
-                    <Link to={`/specificBook/${item.id}`}>
+                    <Link to={`/books/${item.id}`}>
                       <div>{item.author}</div>
                       <div>{item.title}</div>
                     </Link>

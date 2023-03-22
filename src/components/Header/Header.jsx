@@ -18,7 +18,7 @@ export default function Header() {
       <Row className={styles.header_bottom_box}>
         <Col>
           <div className={styles.header_bottom_logo}>
-            <h2 onClick={() => navigate("/bookList")}>
+            <h2 onClick={() => navigate("/books")}>
               JS BAND STORE/Kravchenko Alona
             </h2>
           </div>

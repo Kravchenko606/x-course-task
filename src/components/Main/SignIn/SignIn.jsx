@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import AuthContext from "../../../store/AuthContext";
 import styles from "./SignIn.module.css";
-import avatar from "./avatar.png";
+import avatar from "../../../images/avatar.png";
 import Container from "react-bootstrap/Container";
 import HeaderForSignIn from "../../Header/HeaderForSignIn";
 
@@ -20,9 +20,10 @@ export default function SignIn() {
   } = useForm({ mode: "onSubmit" });
 
   const onSubmit = (data) => {
-    console.log(data);
     reset();
   };
+
+  const usernamePattern = /^[^\s][A-Za-z]/;
 
   return (
     <>
@@ -45,7 +46,7 @@ export default function SignIn() {
               maxLength: {
                 value: 16,
               },
-              pattern: "[a-zA-Z][0-9]",
+              pattern: usernamePattern,
             })}
           />
           <div className={styles.error_message}>
@@ -58,7 +59,7 @@ export default function SignIn() {
             disabled={!isValid}
             onClick={() => {
               localStorage.setItem("userName", getValues("userName"));
-              navigate("/bookList");
+              navigate("/books");
               login();
             }}
           >
